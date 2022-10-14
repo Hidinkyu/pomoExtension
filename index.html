@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,14 +14,34 @@
 <body>
   <div class="box">
     <div class="timeOps">
-      <div class="times">Work Time
-        <br><input type="number" min="0" max="60" class="work text">
+      <div class="times">Work Time <br>(0 - 60 mins)
+        <br><input value="25" type="number" min="0" max="60" class="work text">
       </div>
-      <div class="times">Break Time
-        <br><input type="text" min="0" max="60" class="break text">
+      <div class="times">Break Time <br>(0 - 60mins)
+        <br><input value="5" type="number" min="0" max="60" class="break text">
       </div>
     </div>
     <button class="start">Start Session</button>
+    <h1 class="goalText">Goals!</h1>
+    <div class="goalSet ">
+      <ul>
+        <li><input name="goals" type="radio" class="radioBtn num1">
+          <input type="text" class="goal num1"></li>
+
+        <li><input name="goals" type="radio" class="radioBtn num2">
+          <input type="text" class="goal num2"></li>
+
+        <li><input name="goals" type="radio" class="radioBtn num3">
+          <input type="text" class="goal num3"></li>
+
+        <li><input name="goals" type="radio" class="radioBtn num4">
+          <input type="text" class="goal num4"></li>
+
+        <li><input name="goals" type="radio" class="radioBtn num5">
+          <input type="text" class="goal num5"></li>
+
+      </ul>
+    </div>
   </div>
 </body>
 </html>
