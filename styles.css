@@ -3,18 +3,61 @@
 }
 
 .box {
-  border : 2px solid black;
+
+  background-color : #FFE5D9;
   height: 450px;
   width: 300px;
   display: flex;
+  flex-direction: column;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 20px;
+
 }
 
 .timeOps {
   display: flex;
-  margin: 0 auto;
+  justify-content: space-around;
   margin-top: 20px;
 }
 
-.brkBox {
-  border : 2px solid black;
+.times {
+  text-align: center;
+}
+
+.text {
+  width : 100px;
+  text-align: center;
+  background-color: #F8EDEB;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 5px;
+}
+
+.start {
+  border: 2px solid;
+  width: 200px;
+  height: 60px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 2px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 20px;
+  background-color: rgb(252, 214, 207);
+  transition: 300ms;
+  box-shadow: 46px 45px 87px -41px rgba(255,141,141,0.72) inset;
+  -webkit-box-shadow: 46px 45px 87px -41px rgba(255,141,141,0.72) inset;
+  -moz-box-shadow: 46px 45px 87px -41px rgba(255,141,141,0.72) inset;
+}
+
+.start:hover {
+  cursor: pointer; 
+  background-color: #FEC5BB;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 2px;
 }
