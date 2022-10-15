@@ -1,13 +1,12 @@
 {
-    "manifest_version": 1.0,
-    "name": "pomoExtension",
-    "version": "1.0.0",
-    "description": "A better pomodoro timer!",
-    "content_scripts": [
-      {
-        "matches": ["<all_urls>"],
-        "css": ["styles.css"],
-        "js": ["main.js"]
-      }
-    ]
-   }
+"manifest_version": 3,
+"name": "pomoExtension",
+"version": "1.0.0",
+"description": "A better pomodoro timer!",
+"action": {
+  "default_icon": "./imgs/download-modified.png",
+  "default_title": "pomoExtension",
+  "default_popup": "./index.html"
+}, 
+"permissions": ["storage"]
+}

@@ -14,6 +14,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   })
 });
+let arrayOfGoals = JSON.parse(localStorage.getItem("storedArray")
+) || [];
+
+function displayGoals(index) {
+    const goalList = document.querySelector('.goalList');
+    const newGoal = document.createElement('li'); 
+    newGoal.classList.add("goalList");
+    newGoal.innerText = `Goal ${arrayOfGoals.length}: ${arrayOfGoals[index]}`
+    goalList.appendChild(newGoal);
+}
+
+function saveGoals(){
+    let input = document.querySelector('.goalInput');
+    input.addEventListener("keydown", function(res){
+        if (res.code === "Enter"){
+            arrayOfGoals.push(input.value);
+            localStorage.setItem("storedArray", JSON.stringify(arrayOfGoals))
+            displayGoals(arrayOfGoals.length - 1);
+
+
+        }
+    })
+}
+
+saveGoals()
+
+
 
 /*
 START button
